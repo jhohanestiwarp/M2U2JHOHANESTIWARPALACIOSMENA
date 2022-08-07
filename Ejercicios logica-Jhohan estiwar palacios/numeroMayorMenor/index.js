@@ -21,7 +21,9 @@ parrafoMenor = document.getElementById("menor");
   }else if((numero3.value == numero1.value) || (numero3.value == numero2.value) || (numero3.value == numero4.value)){
     alert("No pueden estar numeros repetidos")
   }else if((numero4.value == numero1.value) || (numero4.value == numero2.value) || (numero4.value == numero3.value)){
-    alert("No pueden estar numeros repetidos")    
+    alert("No pueden estar numeros repetidos")   
+  }  else if(numero1.value < 0 || numero2.value <0 || numero3.value < 0 || numero4.value <0){
+    alert("Numero no puede ser menor que 0")
   }else{
     let mayor = Math.max(numero1.value, numero2.value, numero3.value, numero4.value);
     if(mayor == numero1.value){

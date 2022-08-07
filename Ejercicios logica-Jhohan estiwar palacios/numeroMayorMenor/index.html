@@ -11,26 +11,20 @@
 </head>
 
 <body>
-    <center><h1>EJercicio 2</h1></center>
-    
+    <h1>Numero mayor y menor</h1>
     <div class="container">
         <div class="row">
             <div class="form-group mt-2">
-                <input class="form-control" type="" id="n1" placeholder="Ingrese primer numero">
-                <input class="form-control" type="" id="n2" placeholder="Ingrese segundo numero">
-                <input class="form-control" type="" id="n3" placeholder="Ingrese tercer numero">
-                <input class="form-control" type="" id="n4" placeholder="Ingrese cuarto numero">
-                <br>
-                <br>
-            
+                <input class="form-control" min="1" type="number" id="n1" placeholder="Ingrese primer numero">
+                <input class="form-control" min="1" type="number" id="n2" placeholder="Ingrese segundo numero">
+                <input class="form-control" min="1" type="number" id="n3" placeholder="Ingrese tercer numero">
+                <input class="form-control" min="1" type="number" id="n4" placeholder="Ingrese cuarto numero">
+                <button type="button" min="1" onclick="calculoNumeros()">
+                    <span>Enviar</span>
+                </button>
             </div>
         </div>
     </div>
-    
-   <center><button type="button" onclick="calculoNumeros()">
-    <span>Guardar</span>
-</button></center> 
-    </button>
     <p id="mayor"></p>
     <p id="menor"></p>
     <script src="index.js"></script>
